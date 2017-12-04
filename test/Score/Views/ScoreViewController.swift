@@ -8,20 +8,23 @@
 
 import UIKit
 
-class ScoreViewController: UIViewController {
-
-    @IBOutlet weak var scoreView: ScoreView!
-    var viewModel: ScoreViewModelType!
+class ScoreViewController: UIViewController, ScoreViewModelDelegate {
     
-    convenience init(viewModel: ScoreViewModelType) {
+    let error = "Error"
+    
+    @IBOutlet weak var scoreView: ScoreView!
+    var viewModel: ScoreViewModel!
+    
+    convenience init(viewModel: ScoreViewModel) {
         self.init()
         self.viewModel = viewModel
+        self.viewModel.delegate = self
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Dashboard"
-        setupScoreView()
+        setScore()
     }
     
     fileprivate func showAlert(_ title: String, message: String) {
@@ -31,8 +34,17 @@ class ScoreViewController: UIViewController {
         present(alertController, animated: true, completion: nil)
     }
     
-    func setupScoreView() {
-        scoreView.setScore(score: 600, maxScore: 900)
+    func scoreResultSuccess() {
+        setScore()
     }
+    
+    func setScore() {
+        scoreView?.setScore(score: viewModel.scoreValue, maxScore: viewModel.maxScoreValue)
+    }
+    
+    func scoreResultError(_ error: DataManagerErrorType) {
+        showAlert(error.rawValue, message: error.rawValue)
+    }
+    
 }
 

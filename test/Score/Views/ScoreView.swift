@@ -16,13 +16,16 @@ class ScoreView: UIView {
     let outOfString = "out of"
     let lineWidth = CGFloat(3.0)
     
+    let arcLayer = CAShapeLayer()
+    let shapeLayer = CAShapeLayer()
+    let gradientLayer = CAGradientLayer()
+    
     var score: Int = 0
     var maxScore: Int = 0
     
     @IBOutlet weak var valueLabel: UILabel!
     @IBOutlet weak var resultLabel: UILabel!
     @IBOutlet weak var totalLabel: UILabel!
-    @IBOutlet weak var gradientArcView: UIView!
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -50,6 +53,10 @@ class ScoreView: UIView {
         view = loadViewFromNib()
         view.frame = CGRect(x: 0, y: 0, width: frame.width, height: frame.height)
         addSubview(view)
+        
+        self.layer.addSublayer(shapeLayer)
+        self.layer.addSublayer(gradientLayer)
+        
         resultLabel.text = yourCreditScoreString
     }
     
@@ -60,13 +67,11 @@ class ScoreView: UIView {
     }
     
     func setupArc() {
-        let shapeLayer = CAShapeLayer()
         let point = CGPoint(x: frame.height / 2, y: frame.height / 2)
         let path: CGPath = UIBezierPath.init(arcCenter: point, radius: frame.height / 2, startAngle: CGFloat(0), endAngle: CGFloat.pi * 2, clockwise: true).cgPath
         shapeLayer.path = path
         shapeLayer.strokeColor = UIColor.black.cgColor
         shapeLayer.fillColor = UIColor.clear.cgColor
-        self.layer.addSublayer(shapeLayer)
     }
     
     func setupValues() {
@@ -91,22 +96,17 @@ class ScoreView: UIView {
     }
     
     func setupGradientArc(endPercentage: CGFloat) {
-//        gradientArcView.frame = self.frame
-        
-        let gradientLayer = CAGradientLayer()
-        gradientLayer.frame = gradientArcView.bounds
+        gradientLayer.frame = self.bounds
         gradientLayer.startPoint = CGPoint(x: 0.0, y: 1.0)
         gradientLayer.endPoint = CGPoint(x: 1.0, y: 0.0)
         gradientLayer.colors = getColors(endPercentage: endPercentage)
-        gradientArcView.layer.addSublayer(gradientLayer)
         
-        let arcLayer = CAShapeLayer()
-        let point = CGPoint(x: (gradientArcView.bounds.width) / 2, y: (gradientArcView.bounds.height) / 2)
+        let point = CGPoint(x: frame.height / 2, y: frame.height / 2)
         
         let startAngle = 3 * CGFloat.pi / 2
         let endAngle = 3 * CGFloat.pi / 2 * endPercentage
         
-        let arcPath: CGPath = UIBezierPath.init(arcCenter: point, radius: (gradientArcView.frame.width - 4 * lineWidth) / 2, startAngle: startAngle, endAngle: endAngle, clockwise: true).cgPath
+        let arcPath: CGPath = UIBezierPath.init(arcCenter: point, radius: (frame.height - 4 * lineWidth) / 2, startAngle: startAngle, endAngle: endAngle, clockwise: true).cgPath
         arcLayer.path = arcPath
         arcLayer.strokeColor = UIColor.black.cgColor
         arcLayer.lineWidth = lineWidth

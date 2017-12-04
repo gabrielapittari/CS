@@ -15,7 +15,6 @@
 		2BE664B41FD5579500F18183 /* testUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE664B31FD5579500F18183 /* testUITests.swift */; };
 		2BE664C71FD563EA00F18183 /* ScoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE664C61FD563EA00F18183 /* ScoreViewModel.swift */; };
 		2BE664CA1FD5641800F18183 /* Score.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE664C91FD5641800F18183 /* Score.swift */; };
-		2BE664CC1FD5643900F18183 /* ScoreViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE664CB1FD5643900F18183 /* ScoreViewModelType.swift */; };
 		2BE664CF1FD5688400F18183 /* CreditReportInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE664CE1FD5688400F18183 /* CreditReportInfo.swift */; };
 		2BE664D11FD56BA000F18183 /* CoachingSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE664D01FD56BA000F18183 /* CoachingSummary.swift */; };
 		2BE664D81FD5739100F18183 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE664D71FD5739100F18183 /* DataManager.swift */; };
@@ -57,7 +56,6 @@
 		2BE664B51FD5579500F18183 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2BE664C61FD563EA00F18183 /* ScoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewModel.swift; sourceTree = "<group>"; };
 		2BE664C91FD5641800F18183 /* Score.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Score.swift; sourceTree = "<group>"; };
-		2BE664CB1FD5643900F18183 /* ScoreViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewModelType.swift; sourceTree = "<group>"; };
 		2BE664CE1FD5688400F18183 /* CreditReportInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditReportInfo.swift; sourceTree = "<group>"; };
 		2BE664D01FD56BA000F18183 /* CoachingSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachingSummary.swift; sourceTree = "<group>"; };
 		2BE664D71FD5739100F18183 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
@@ -147,7 +145,6 @@
 		2BE664C21FD5638200F18183 /* Score */ = {
 			isa = PBXGroup;
 			children = (
-				2BE664C51FD563A400F18183 /* Protocols */,
 				2BE664C41FD5639C00F18183 /* ViewModels */,
 				2BE664C31FD5639700F18183 /* Views */,
 			);
@@ -171,14 +168,6 @@
 				2BE664C61FD563EA00F18183 /* ScoreViewModel.swift */,
 			);
 			path = ViewModels;
-			sourceTree = "<group>";
-		};
-		2BE664C51FD563A400F18183 /* Protocols */ = {
-			isa = PBXGroup;
-			children = (
-				2BE664CB1FD5643900F18183 /* ScoreViewModelType.swift */,
-			);
-			path = Protocols;
 			sourceTree = "<group>";
 		};
 		2BE664C81FD563FF00F18183 /* Models */ = {
@@ -338,7 +327,6 @@
 				2BE664CF1FD5688400F18183 /* CreditReportInfo.swift in Sources */,
 				2BE664C71FD563EA00F18183 /* ScoreViewModel.swift in Sources */,
 				2BE664961FD5579500F18183 /* ScoreViewController.swift in Sources */,
-				2BE664CC1FD5643900F18183 /* ScoreViewModelType.swift in Sources */,
 				2BE664D11FD56BA000F18183 /* CoachingSummary.swift in Sources */,
 				2BE664DA1FD573BA00F18183 /* BundleReader.swift in Sources */,
 				2BE664CA1FD5641800F18183 /* Score.swift in Sources */,

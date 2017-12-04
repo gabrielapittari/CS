@@ -12,7 +12,6 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ScoreView" customModule="test" customModuleProvider="target">
             <connections>
-                <outlet property="gradientArcView" destination="zr7-mP-tI9" id="Bb5-Zr-dfD"/>
                 <outlet property="resultLabel" destination="DPy-fC-nVI" id="cPB-4S-Bif"/>
                 <outlet property="totalLabel" destination="blv-lN-wxo" id="RJs-z3-a5t"/>
                 <outlet property="valueLabel" destination="ND7-Ts-whj" id="dxh-II-1Hz"/>
@@ -23,9 +22,6 @@
             <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zr7-mP-tI9">
-                    <rect key="frame" x="0.0" y="0.0" width="300" height="300"/>
-                </view>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DPy-fC-nVI">
                     <rect key="frame" x="16" y="41" width="268" height="21"/>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -47,14 +43,10 @@
             </subviews>
             <constraints>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="blv-lN-wxo" secondAttribute="bottom" constant="62" id="1hV-rW-DGm"/>
-                <constraint firstItem="zr7-mP-tI9" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="4KQ-Y2-miY"/>
-                <constraint firstItem="zr7-mP-tI9" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="5kL-x6-Zep"/>
                 <constraint firstItem="DPy-fC-nVI" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="7GE-Ha-G3R"/>
                 <constraint firstItem="ND7-Ts-whj" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="AFx-If-dll"/>
                 <constraint firstItem="blv-lN-wxo" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="Lll-mP-efJ"/>
                 <constraint firstItem="DPy-fC-nVI" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="41" id="OMX-4G-4oB"/>
-                <constraint firstItem="zr7-mP-tI9" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="cFN-nl-A1z"/>
-                <constraint firstItem="zr7-mP-tI9" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="kh8-8Z-YGH"/>
                 <constraint firstItem="ND7-Ts-whj" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="sUx-op-PVy"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>

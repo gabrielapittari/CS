@@ -7,9 +7,17 @@
 //
 import Foundation
 
-final class ScoreViewModel: ScoreViewModelType, DataManagerDelegate {
+protocol ScoreViewModelDelegate: class {
+    func scoreResultSuccess()
+    func scoreResultError(_ error: DataManagerErrorType)
+}
+
+final class ScoreViewModel: DataManagerDelegate {
     
-    var score: Score!
+    weak var delegate: ScoreViewModelDelegate!
+    
+    var scoreValue: Int = 0
+    var maxScoreValue: Int = 0
     
     init() {
         let dataManager = DataManager()
@@ -18,10 +26,13 @@ final class ScoreViewModel: ScoreViewModelType, DataManagerDelegate {
     }
     
     func transactionResult<T>(_ result: T) {
-        score = result as! Score
+        let score = result as! Score
+        maxScoreValue = score.creditReportInfo.maxScoreValue
+        scoreValue = score.creditReportInfo.score
+        self.delegate?.scoreResultSuccess()
     }
     
     func transactionError(_ error: DataManagerErrorType) {
-        print("transactionError")
+        self.delegate?.scoreResultError(error)
     }
 }

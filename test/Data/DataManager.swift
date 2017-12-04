@@ -8,7 +8,7 @@
 
 import Foundation
 
-public enum DataManagerErrorType {
+public enum DataManagerErrorType: String {
     case noConnection
     case dataError
     case unknown
