@@ -10,7 +10,8 @@ import UIKit
 
 class ScoreViewController: UIViewController, ScoreViewModelDelegate {
     
-    let error = "Error"
+    let errorString = "Error"
+    let okString = "Ok"
     
     @IBOutlet weak var scoreView: ScoreView!
     var viewModel: ScoreViewModel!
@@ -29,7 +30,7 @@ class ScoreViewController: UIViewController, ScoreViewModelDelegate {
     
     fileprivate func showAlert(_ title: String, message: String) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let ok = UIAlertAction(title: "Ok", style: .default, handler: nil)
+        let ok = UIAlertAction(title: okString, style: .default, handler: nil)
         alertController.addAction(ok)
         present(alertController, animated: true, completion: nil)
     }
@@ -43,7 +44,7 @@ class ScoreViewController: UIViewController, ScoreViewModelDelegate {
     }
     
     func scoreResultError(_ error: DataManagerErrorType) {
-        showAlert(error.rawValue, message: error.rawValue)
+        showAlert(errorString, message: error.rawValue)
     }
     
 }

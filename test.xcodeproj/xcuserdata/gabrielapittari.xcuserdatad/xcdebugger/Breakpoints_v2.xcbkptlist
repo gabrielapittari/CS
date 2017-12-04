@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "test/Score/Views/ScoreView.swift"
-            timestampString = "534112178.356501"
+            timestampString = "534112323.967776"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "31"
@@ -26,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "test/Score/Views/ScoreViewController.swift"
-            timestampString = "534112178.356805"
+            timestampString = "534112323.968189"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "37"
-            endingLineNumber = "37"
-            landmarkName = "scoreResultSuccess(_:)"
+            startingLineNumber = "38"
+            endingLineNumber = "38"
+            landmarkName = "scoreResultSuccess()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

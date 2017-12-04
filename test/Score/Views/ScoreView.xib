@@ -28,8 +28,12 @@
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
                 </label>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ND7-Ts-whj">
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ND7-Ts-whj">
                     <rect key="frame" x="16" y="108" width="269" height="74"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="269" id="HDJ-vj-vEA"/>
+                        <constraint firstAttribute="height" constant="74" id="Rgy-4z-aGN"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="80"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -47,7 +51,7 @@
                 <constraint firstItem="ND7-Ts-whj" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="AFx-If-dll"/>
                 <constraint firstItem="blv-lN-wxo" firstAttribute="centerX" secondItem="vUN-kp-3ea" secondAttribute="centerX" id="Lll-mP-efJ"/>
                 <constraint firstItem="DPy-fC-nVI" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="41" id="OMX-4G-4oB"/>
-                <constraint firstItem="ND7-Ts-whj" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" id="sUx-op-PVy"/>
+                <constraint firstItem="ND7-Ts-whj" firstAttribute="centerY" secondItem="vUN-kp-3ea" secondAttribute="centerY" constant="-5" id="sUx-op-PVy"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
