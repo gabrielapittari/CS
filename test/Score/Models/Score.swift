@@ -14,7 +14,7 @@ public struct Score: Codable {
         case UNKNOWN
     }
     
-    enum PersonalType: String, Codable {
+    enum PersonaType: String, Codable {
         case EXPERIENCED
         case INEXPERIENCED
         case UNKNOWN
@@ -23,7 +23,7 @@ public struct Score: Codable {
     var accountIDVStatus: Status = .UNKNOWN
     var creditReportInfo: CreditReportInfo!
     var dashboardStatus: Status = .UNKNOWN
-    var personalType: PersonalType = .UNKNOWN
+    var personaType: PersonaType = .UNKNOWN
     var coachingSummary: CoachingSummary!
     
 }

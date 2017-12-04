@@ -33,9 +33,9 @@ public struct CreditReportInfo: Codable {
     var currentShortTermCreditUtilisation: Int = 0
     var changeInShortTermDebt: Int = 0
     var currentLongTermDebt: Int = 0
-    var currentLongTermNonPromotionalDebt: Int = 0
-    var currentLongTermCreditLimit: Int = 0
-    var currentLongTermCreditUtilisation: Int = 0
+//    var currentLongTermNonPromotionalDebt: Int = 0
+//    var currentLongTermCreditLimit: Int = 0
+//    var currentLongTermCreditUtilisation: Int = 0
     var changeInLongTermDebt: Int = 0
     var numPositiveScoreFactors: Int = 0
     var numNegativeScoreFactors: Int = 0

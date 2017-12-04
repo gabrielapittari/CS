@@ -18,6 +18,8 @@
 		2BE664CC1FD5643900F18183 /* ScoreViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE664CB1FD5643900F18183 /* ScoreViewModelType.swift */; };
 		2BE664CF1FD5688400F18183 /* CreditReportInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE664CE1FD5688400F18183 /* CreditReportInfo.swift */; };
 		2BE664D11FD56BA000F18183 /* CoachingSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE664D01FD56BA000F18183 /* CoachingSummary.swift */; };
+		2BE664D81FD5739100F18183 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE664D71FD5739100F18183 /* DataManager.swift */; };
+		2BE664DA1FD573BA00F18183 /* BundleReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE664D91FD573BA00F18183 /* BundleReader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,8 @@
 		2BE664CB1FD5643900F18183 /* ScoreViewModelType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewModelType.swift; sourceTree = "<group>"; };
 		2BE664CE1FD5688400F18183 /* CreditReportInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreditReportInfo.swift; sourceTree = "<group>"; };
 		2BE664D01FD56BA000F18183 /* CoachingSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachingSummary.swift; sourceTree = "<group>"; };
+		2BE664D71FD5739100F18183 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		2BE664D91FD573BA00F18183 /* BundleReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleReader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,11 +109,13 @@
 		2BE664921FD5579500F18183 /* test */ = {
 			isa = PBXGroup;
 			children = (
+				2BE664D41FD5735300F18183 /* Data */,
 				2BE664C21FD5638200F18183 /* Score */,
 				2BE664931FD5579500F18183 /* AppDelegate.swift */,
 				2BE6649A1FD5579500F18183 /* Assets.xcassets */,
 				2BE6649C1FD5579500F18183 /* LaunchScreen.storyboard */,
 				2BE6649F1FD5579500F18183 /* Info.plist */,
+				2BE664D91FD573BA00F18183 /* BundleReader.swift */,
 			);
 			path = test;
 			sourceTree = "<group>";
@@ -175,6 +181,14 @@
 				2BE664D01FD56BA000F18183 /* CoachingSummary.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		2BE664D41FD5735300F18183 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				2BE664D71FD5739100F18183 /* DataManager.swift */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,7 +329,9 @@
 				2BE664961FD5579500F18183 /* ScoreViewController.swift in Sources */,
 				2BE664CC1FD5643900F18183 /* ScoreViewModelType.swift in Sources */,
 				2BE664D11FD56BA000F18183 /* CoachingSummary.swift in Sources */,
+				2BE664DA1FD573BA00F18183 /* BundleReader.swift in Sources */,
 				2BE664CA1FD5641800F18183 /* Score.swift in Sources */,
+				2BE664D81FD5739100F18183 /* DataManager.swift in Sources */,
 				2BE664941FD5579500F18183 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
