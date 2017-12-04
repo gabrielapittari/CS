@@ -20,6 +20,9 @@
 		2BE664D11FD56BA000F18183 /* CoachingSummary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE664D01FD56BA000F18183 /* CoachingSummary.swift */; };
 		2BE664D81FD5739100F18183 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE664D71FD5739100F18183 /* DataManager.swift */; };
 		2BE664DA1FD573BA00F18183 /* BundleReader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE664D91FD573BA00F18183 /* BundleReader.swift */; };
+		2BE664DC1FD57D6F00F18183 /* ScoreViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BE664DB1FD57D6F00F18183 /* ScoreViewController.xib */; };
+		2BE664DE1FD57DF500F18183 /* ScoreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2BE664DD1FD57DF500F18183 /* ScoreView.xib */; };
+		2BE664E01FD57E1F00F18183 /* ScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE664DF1FD57E1F00F18183 /* ScoreView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,9 @@
 		2BE664D01FD56BA000F18183 /* CoachingSummary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoachingSummary.swift; sourceTree = "<group>"; };
 		2BE664D71FD5739100F18183 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		2BE664D91FD573BA00F18183 /* BundleReader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BundleReader.swift; sourceTree = "<group>"; };
+		2BE664DB1FD57D6F00F18183 /* ScoreViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScoreViewController.xib; sourceTree = "<group>"; };
+		2BE664DD1FD57DF500F18183 /* ScoreView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ScoreView.xib; sourceTree = "<group>"; };
+		2BE664DF1FD57E1F00F18183 /* ScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,7 +147,6 @@
 		2BE664C21FD5638200F18183 /* Score */ = {
 			isa = PBXGroup;
 			children = (
-				2BE664C81FD563FF00F18183 /* Models */,
 				2BE664C51FD563A400F18183 /* Protocols */,
 				2BE664C41FD5639C00F18183 /* ViewModels */,
 				2BE664C31FD5639700F18183 /* Views */,
@@ -153,6 +158,9 @@
 			isa = PBXGroup;
 			children = (
 				2BE664951FD5579500F18183 /* ScoreViewController.swift */,
+				2BE664DB1FD57D6F00F18183 /* ScoreViewController.xib */,
+				2BE664DD1FD57DF500F18183 /* ScoreView.xib */,
+				2BE664DF1FD57E1F00F18183 /* ScoreView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -186,6 +194,7 @@
 		2BE664D41FD5735300F18183 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				2BE664C81FD563FF00F18183 /* Models */,
 				2BE664D71FD5739100F18183 /* DataManager.swift */,
 			);
 			path = Data;
@@ -299,6 +308,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2BE6649E1FD5579500F18183 /* LaunchScreen.storyboard in Resources */,
+				2BE664DE1FD57DF500F18183 /* ScoreView.xib in Resources */,
+				2BE664DC1FD57D6F00F18183 /* ScoreViewController.xib in Resources */,
 				2BE6649B1FD5579500F18183 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,6 +344,7 @@
 				2BE664CA1FD5641800F18183 /* Score.swift in Sources */,
 				2BE664D81FD5739100F18183 /* DataManager.swift in Sources */,
 				2BE664941FD5579500F18183 /* AppDelegate.swift in Sources */,
+				2BE664E01FD57E1F00F18183 /* ScoreView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

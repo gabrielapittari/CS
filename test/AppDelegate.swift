@@ -15,8 +15,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         /// start new window
         window = UIWindow(frame: UIScreen.main.bounds)
-        let moviesViewController = ScoreViewController()
-        let navigationController = UINavigationController(rootViewController: moviesViewController)
+        let viewModel = ScoreViewModel()
+        let viewController = ScoreViewController(viewModel: viewModel)
+        let navigationController = UINavigationController(rootViewController: viewController)
         window!.rootViewController = navigationController
         window!.makeKeyAndVisible()
         return true
