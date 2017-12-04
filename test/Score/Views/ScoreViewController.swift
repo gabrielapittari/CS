@@ -10,6 +10,7 @@ import UIKit
 
 class ScoreViewController: UIViewController {
 
+    @IBOutlet weak var scoreView: ScoreView!
     var viewModel: ScoreViewModelType!
     
     convenience init(viewModel: ScoreViewModelType) {
@@ -20,6 +21,7 @@ class ScoreViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationItem.title = "Dashboard"
+        setupScoreView()
     }
     
     fileprivate func showAlert(_ title: String, message: String) {
@@ -27,6 +29,10 @@ class ScoreViewController: UIViewController {
         let ok = UIAlertAction(title: "Ok", style: .default, handler: nil)
         alertController.addAction(ok)
         present(alertController, animated: true, completion: nil)
+    }
+    
+    func setupScoreView() {
+        scoreView.setScore(score: 600, maxScore: 900)
     }
 }
 

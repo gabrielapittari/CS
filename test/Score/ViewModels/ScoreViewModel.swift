@@ -19,11 +19,9 @@ final class ScoreViewModel: ScoreViewModelType, DataManagerDelegate {
     
     func transactionResult<T>(_ result: T) {
         score = result as! Score
-        
     }
     
     func transactionError(_ error: DataManagerErrorType) {
         print("transactionError")
     }
-    
 }
