@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  ScoreViewController.swift
 //  test
 //
 //  Created by Gabriela Pittari on 04/12/2017.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class  ScoreViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
