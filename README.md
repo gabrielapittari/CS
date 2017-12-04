@@ -21,3 +21,4 @@ Further recommended developments
 If I would have had more time I would have implemented this:
 - For caching data we could use third party libraries like Realm.
 - Dependency injection is a very good option to implement with this structure.
+- For time reasons I couldn't implement unit tests.
