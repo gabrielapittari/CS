@@ -90,6 +90,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		2B1477CA1FD5E98500220206 /* ScoreView */ = {
+			isa = PBXGroup;
+			children = (
+				2BE664DD1FD57DF500F18183 /* ScoreView.xib */,
+				2BE664DF1FD57E1F00F18183 /* ScoreView.swift */,
+			);
+			path = ScoreView;
+			sourceTree = "<group>";
+		};
 		2BE664871FD5579400F18183 = {
 			isa = PBXGroup;
 			children = (
@@ -154,10 +163,9 @@
 		2BE664C31FD5639700F18183 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				2B1477CA1FD5E98500220206 /* ScoreView */,
 				2BE664951FD5579500F18183 /* ScoreViewController.swift */,
 				2BE664DB1FD57D6F00F18183 /* ScoreViewController.xib */,
-				2BE664DD1FD57DF500F18183 /* ScoreView.xib */,
-				2BE664DF1FD57E1F00F18183 /* ScoreView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
